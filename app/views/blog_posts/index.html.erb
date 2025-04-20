@@ -2,7 +2,7 @@
 
 <% content_for :title, "Blog posts" %>
 
-<h1>Blog posts</h1>
+<h1 class="text-3xl text-center">All the Posts</h1>
 
 <div id="blog_posts">
   <% @blog_posts.each do |blog_post| %>
@@ -13,4 +13,3 @@
   <% end %>
 </div>
 
-<%= link_to "New blog post", new_blog_post_path %>

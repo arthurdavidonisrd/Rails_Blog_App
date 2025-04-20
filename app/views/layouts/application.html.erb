@@ -23,7 +23,22 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <header class="bg-gray-800 p-4">
+      <div class="flex justify-between items-center">
+        <h1 class="text-white text-xl">
+          <%= link_to "GoRails", root_path, class: "hover:text-gray-400" %>
+        </h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li>
+              <%= link_to "New Post", new_blog_post_path, class: "text-white hover:text-gray-400" %>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
       <%= yield %>
     </main>
   </body>
